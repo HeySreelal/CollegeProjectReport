@@ -10,6 +10,7 @@
 *.swp
 *~
 *.out
+*.toc
 
 # Ignore LaTeX build directories
 /_build/
