@@ -9,6 +9,7 @@
 *.bak
 *.swp
 *~
+*.out
 
 # Ignore LaTeX build directories
 /_build/
