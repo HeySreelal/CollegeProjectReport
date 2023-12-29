@@ -1,0 +1,15 @@
+# Ignore compiled LaTeX files
+*.aux
+*.log
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Ignore temporary files
+*.bak
+*.swp
+*~
+
+# Ignore LaTeX build directories
+/_build/
+
