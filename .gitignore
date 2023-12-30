@@ -4,12 +4,15 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.lof
+*.lot
 
 # Ignore temporary files
 *.bak
 *.swp
 *~
 *.out
+*.toc
 
 # Ignore LaTeX build directories
 /_build/
