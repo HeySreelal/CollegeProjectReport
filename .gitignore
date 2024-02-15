@@ -13,6 +13,8 @@
 *~
 *.out
 *.toc
+*.bbl
+*.blg
 
 # Ignore LaTeX build directories
 /_build/
