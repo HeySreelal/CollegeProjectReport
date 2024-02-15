@@ -404,4 +404,112 @@ The primary goals in the design of the UML are as follows:
     \item Integrate best practices.
 \end{itemize}
 
+% -- Chapter 4 ----------------------------
+
+\chapter{System Testing and Deployment}
+In broad terms, system testing ensures the efficient and seamless performance of a system. It involves testing a program to uncover potential errors that could adversely impact its future functionality. Successful test cases are those that have a high likelihood of revealing errors, thereby aiding in the identification and resolution of previously unknown issues.
+
+\section{Test Cases}
+As previously discussed, testing is the methodical process of identifying potential vulnerabilities in the finalized software product. It involves evaluating the performance of sub-assemblies, components, assemblies, and the entire product to ensure alignment with business requirements and user expectations while minimizing the risk of sudden failure. Today, various types of tests are employed, each serving distinct testing objectives.
+
+\section{Testing Techniques}
+A test plan serves as a comprehensive document outlining the strategy, scope, resources, and schedule for planned testing activities. It delineates various test items, including the features to be tested, associated tasks, assignment of responsibilities, level of tester autonomy, testing environment specifications, design techniques, and exit criteria. Additionally, it addresses emergency risk mitigation strategies. Essentially, it records the test planning process and typically involves significant input from test engineers. The following sections describe different testing techniques in detail.
+
+\begin{itemize}
+    \item \textbf{Unit Testing:}
+          Unit testing involves designing test cases to validate the internal logic of the program. This includes verifying all decision branches and internal code. Unit testing occurs after the completion of individual units and before integration. It focuses on conducting basic-level tests at the component stage, assessing specific business processes, and system configurations. The goal of unit testing is to ensure that each unique path of the process executes accurately according to documented specifications, with clearly defined inputs and expected results.
+    \item \textbf{Integration Testing:}
+          Integration testing focuses on evaluating integrated software components to ensure they function as a cohesive program or application. It employs an event-driven approach, primarily concerned with assessing the overall behavior of the system. Integration tests validate that the components, which have already passed successful unit testing, work together effectively. This type of testing is specifically designed to uncover any issues that may arise from the combination of components.
+    \item \textbf{Functional Testing}:
+          Functional testing ensures that the system's functions are systematically verified against technical requirements, system documentation, and user manuals. It aims to provide a comprehensive validation of the system's functionality, ensuring that all specified functions are available and operate according to established criteria.
+    \item \textbf{System Testing}
+          System testing, as its name implies, is a form of testing that verifies whether the software system aligns with the established business requirements and objectives. This testing phase includes the examination of system configurations to ensure consistent and predictable outcomes, along with the analysis of system behavior. System testing is reliant
+    \item \textbf{White Box Testing}
+          White box testing involves examining the internal components of the system software, allowing testers to access and manipulate them directly. This testing approach is inherently complex, requiring testers to analyze data structures, components, and other internal elements to identify potential bugs or errors. White box testing is employed when black box testing is insufficient in uncovering bugs. Due to its intricacy, white box testing typically requires more time to implement effectively.
+    \item \textbf{Black Box Testing}
+          Black box testing involves assessing the software system based solely on its inputs and outputs, without access to its internal components. This testing method is straightforward, as testers focus on the system's behavior rather than its internal structure. Even testers with basic programming knowledge can conduct black box testing effectively. Compared to white box testing, black box testing is less time-consuming and is particularly suitable for less complex and straightforward software. Additionally, it is generally less costly than white box testing.
+    \item \textbf{Acceptance Testing}
+          Acceptance testing, particularly user acceptance testing (UAT), is a pivotal stage in any project, requiring active involvement from end users. This testing phase is essential for ensuring that the system aligns with functional requirements and meets the expectations of its intended users.
+\end{itemize}
+
+\section{Criteria used for Testing of Proposed System}
+
+
+\textbf{Entry Criteria:}
+\begin{enumerate}
+    \item \textbf{Completion of Website Development:} \\
+          The development of the website using React is completed, ensuring all features and functionalities are implemented according to specifications.
+
+    \item \textbf{Availability of Test Environment:} \\
+          A test environment is set up with access to necessary tools and resources for conducting testing, including Jest for unit testing and Razorpay's test platform for payment system validation.
+
+    \item \textbf{Team Readiness for Verification:} \\
+          The project team is prepared to participate in verification sessions, including multiple team calls to review the system's functionality.
+\end{enumerate}
+
+\textbf{Testing Methodologies:}
+\begin{enumerate}
+    \item \textbf{White Box Testing (Unit Testing):} \\
+          Utilizing Jest, the website undergoes white box testing to verify internal components and logic, ensuring adherence to coding standards and robustness.
+
+    \item \textbf{Team Verification and Trial Runs:} \\
+          Multiple team calls are scheduled to verify the system's functionality and address any issues identified during testing. Trial runs are conducted by DTPC authorities to assess the system's performance in real-world scenarios.
+
+    \item \textbf{Payment System Testing with Razorpay:} \\
+          Integration with Razorpay prompts thorough testing of the payment system, including transaction processing and error handling. Razorpay's test platform is utilized to validate the reliability and functionality of the payment gateway.
+\end{enumerate}
+
+\textbf{Exit Criteria:}
+\begin{enumerate}
+    \item \textbf{Successful Completion of Testing:} \\
+          All identified test cases are executed, and the system demonstrates compliance with functional requirements and user expectations.
+
+    \item \textbf{Resolution of Identified Issues:} \\
+          Any issues or discrepancies uncovered during testing are addressed and resolved to ensure the system's stability and reliability.
+
+    \item \textbf{Confirmation of Payment System Integration:} \\
+          The payment system integration with Razorpay is successfully tested, and transactions are processed without errors or interruptions.
+\end{enumerate}
+
+Furthermore, in the development of the admin app, we employed a comprehensive testing approach to validate its functionality and robustness. This involved utilizing Flutter Unit Testing to scrutinize individual units of code, Widget Testing to assess the rendering and behavior of user interface components, and integration testing to evaluate the seamless interaction and integration of various modules within the app. By employing these testing methodologies, we ensured that the admin app meets the required standards of performance and functionality, contributing to a seamless user experience.
+
+\section{Test Cases and Tools Used}
+
+\begin{enumerate}
+    \item \textbf{Unit Testing for Website (React):}
+          \begin{itemize}
+              \item \textbf{Tool:} Jest
+              \item \textbf{Description:} Jest was utilized for unit testing the website components and internal logic, ensuring code robustness and adherence to coding standards.
+          \end{itemize}
+
+    \item \textbf{Integration Testing for Website (React):}
+          \begin{itemize}
+              \item \textbf{Description:} Integration testing was conducted to verify the seamless interaction and integration of different components within the website, ensuring overall system functionality.
+          \end{itemize}
+
+    \item \textbf{Payment System Testing (Razorpay):}
+          \begin{itemize}
+              \item \textbf{Tool:} Razorpay Test Platform
+              \item \textbf{Description:} The payment system integration with Razorpay was rigorously tested using their test platform to validate transaction processing and error handling.
+          \end{itemize}
+
+    \item \textbf{Unit Testing for Admin App (Flutter):}
+          \begin{itemize}
+              \item \textbf{Tool:} Flutter's Built-in Testing Framework
+              \item \textbf{Description:} Flutter's built-in testing framework was utilized for unit testing the admin app's individual units of code, ensuring code reliability and functionality.
+          \end{itemize}
+
+    \item \textbf{Widget Testing for Admin App (Flutter):}
+          \begin{itemize}
+              \item \textbf{Description:} Widget testing was performed to evaluate the rendering and behavior of UI components within the admin app, ensuring correct functionality and appearance.
+          \end{itemize}
+
+    \item \textbf{Integration Testing for Admin App (Flutter):}
+          \begin{itemize}
+              \item \textbf{Description:} Integration testing was conducted to verify the seamless interaction and integration of various modules within the admin app, ensuring overall system functionality.
+          \end{itemize}
+\end{enumerate}
+
+By leveraging these testing tools and methodologies, thorough testing was conducted to validate the functionality, reliability, and performance of both the website and the admin app, ensuring a seamless user experience.
+
 \end{document}
