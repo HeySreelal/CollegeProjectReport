@@ -63,7 +63,7 @@
 \renewcommand\abstractname{\textform{\textbf{DECLARATION}}}
 \begin{abstract}
     \vspace{1.5 cm}
-    \indent
+
     I hereby declare that the work presented in this project report entitled \textbf{\textquotedblleft Ticket Booking System for Edakkal Caves\textquotedblright}, is based on the original project work carried out by me under the supervision of  \textbf{Mr. Sabu O J}, Assistant Professor, PG and Research Department of Computer Science, Mary Matha Arts \& Science College, Mananthavady affiliated to Kannur University, Kerala.  The project work presented in this report or parts of it has not been presented for the award of any other degree(s). \\[4cm]
     \begin{minipage}{.8\textwidth}
         \begin{flushleft}
@@ -88,7 +88,7 @@
 \renewcommand\abstractname{\textform{\textbf{CERTIFICATE}}}
 \begin{abstract}
     \vspace{1.5 cm}
-    \indent
+
     This is to certify that this project report entitled  \textbf{\textquotedblleft Ticket Booking System for Edakkal Caves\textquotedblright}, is a bonafide record of the work carried out by \textbf{Mr. Sreelal TS} under our supervision in the PG and Research Department of Computer Science, Mary Matha Arts \& Science College, as a part of his/her Bachelor of Science in Computer Science.  The work presented in this project or parts of it has not been presented for the award of any other degree(s). \\[1.5cm]
 
     \begin{minipage}{.7\textwidth}
@@ -325,7 +325,7 @@ By employing React and JavaScript for the user portal and Flutter with Dart for 
 
 \section{Design and Architecture of the System}
 A system architecture is a conceptual model that defines the structure, behavior, and views of a system. It defines the structure of the software system and how it is organized. It also describes the relationships between components, levels of abstraction, and other aspects of the software system. The architecture of the proposed system is given in Figure ~\ref{architecture}.
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{assets/Architecture.png}
     \caption{Architecture of the Proposed System}
@@ -344,30 +344,7 @@ Levels or layers are used in DFDs to represent progressive degrees of detail abo
 \end{itemize}
 
 In theory, more levels are possible, but they are rarely used and would likely represent more detail than a data flow diagram would normally convey. The diagrams of different levels of the DFD are illustrated in the following Figures
-
-\section{Design and Architecture of the System}
-A system architecture is a conceptual model that defines the structure, behavior, and views of a system. It defines the structure of the software system and how it is organized. It also describes the relationships between components, levels of abstraction, and other aspects of the software system. The architecture of the proposed system is given in Figure ~\ref{architecture}.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{assets/Architecture.png}
-    \caption{Architecture of the Proposed System}
-    \label{architecture}
-\end{figure}
-
-\subsection{Data Flow Diagrams (DFD)}
-The data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles, and arrows, plus short text labels, to show data inputs, outputs, storage points, and the routes between each destination. Data flowcharts can range from simple, even hand-drawn process overviews, to in-depth, multi-level DFDs that dig progressively deeper into how the data is handled.
-
-Levels or layers are used in DFDs to represent progressive degrees of detail about the system or process. These levels include:
-\begin{itemize}
-    \item \textbf{Level 0}: Also known as a "context diagram," this is the highest level and represents a very simple, top-level view of the system being represented.
-    \item \textbf{Level 1}: Still a relatively broad view of the system, but incorporates subprocesses and more detail.
-    \item \textbf{Level 2}: Provides even more detail and continues to break down subprocesses as needed.
-    \item \textbf{Level 3}: While this amount of detail is uncommon, complex systems can benefit from representation at this level.
-\end{itemize}
-
-In theory, more levels are possible, but they are rarely used and would likely represent more detail than a data flow diagram would normally convey. The diagrams of different levels of the DFD are illustrated in the following Figures:
-
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{assets/DFD-1.jpg}
     \caption{Level 0 DFD}
@@ -511,5 +488,65 @@ Furthermore, in the development of the admin app, we employed a comprehensive te
 \end{enumerate}
 
 By leveraging these testing tools and methodologies, thorough testing was conducted to validate the functionality, reliability, and performance of both the website and the admin app, ensuring a seamless user experience.
+
+\chapter{CONCLUSIONS AND FUTURE WORK}
+
+Reputation assessment stands as a critical element within online rating systems, garnering significant attention in numerous studies and research endeavors. Exploring various reputation measurement techniques has been pivotal in addressing the challenge of false reputation. While many existing works focus on evaluating product reputation through clustering, classification techniques, and hypothesis testing methods, few delve into assessing the confidence of ratings using suitable algorithms. Moreover, the complexity of evaluating both product and seller reputation adds another layer of challenge. In light of these considerations, the stature estimation framework not only assesses product reputation but also incorporates seller reputation evaluation. By determining the confidence of ratings and each seller's activity score, the framework enhances trustworthiness, allowing users to independently evaluate both products and sellers. Experimental results corroborate the efficacy of the stature estimation method in mitigating the impact of false reputation compared to conventional approaches like the arithmetic mean method.
+
+Moving forward, there are several avenues for future work and system expansion. One potential direction is to extend the system to encompass the entirety of the Edakkal Caves website. This expansion could facilitate various enhancements, such as enabling the District Tourism Promotion Council (DTPC) Wayanad to disseminate event plans, additional information, and notifications to users. Additionally, further improvements to the website could include:
+\begin{enumerate}
+    \item Enhancing user experience through intuitive navigation and interactive features.
+    \item Implementing personalized recommendation systems based on user preferences and past activities.
+    \item Integrating social sharing functionalities to foster community engagement and user interaction.
+    \item Incorporating multilingual support to cater to a diverse user base, thereby enhancing accessibility and inclusivity.
+\end{enumerate}
+
+By embarking on these future endeavors, the Ticket Booking System for Edakkal Caves can evolve into a comprehensive platform that not only facilitates efficient ticket booking but also serves as a valuable resource for tourists seeking information and experiences related to the Edakkal Caves and its surroundings.
+
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{6}
+\nocite{*}
+\bibliography{references}
+
+\chapter*{APPENDICES}
+\addcontentsline{toc}{chapter}{APPENDICES}
+\pagenumbering{roman}
+\setcounter{page}{7}
+\renewcommand{\thesection}{\Alph{section}}
+
+This section contains screenshots of various pages from the Ticket Booking System for Edakkal Caves application, providing visual representations of its user interface and functionality.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/Home.png}
+    \caption{Screenshot of the Home Page}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/Home-2.png}
+    \caption{Another Screenshot of the Home Page}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/Booking.png}
+    \caption{Screenshot of the Booking Page}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/Gallery.png}
+    \caption{Screenshot of the Gallery and FAQ section}
+\end{figure}
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/Slots.png}
+    \caption{Screenshot of the section showing available slots}
+\end{figure}
 
 \end{document}
