@@ -247,4 +247,161 @@ During system analysis, the feasibility study of the proposed system is to be ca
           Community Impact: The digital ticketing system aligns with contemporary expectations, offering a more accessible and efficient means for tourists to explore Edakkal Caves. By minimizing on-site congestion and enhancing the visitor experience, the project positively contributes to the preservation of the cultural heritage site.
 \end{itemize}
 
+\clearpage
+\chapter{Proposed System Design and Development}
+
+In this section, we delve into the intricacies of the proposed Ticket Booking System for Edakkal Caves, outlining the design and development strategies that underpin its functionality. The system's architecture is meticulously crafted to ensure a seamless and user-friendly experience. The user-facing web application, developed using React and backed by Firebase, serves as the primary interface for tourists. This component provides a comprehensive platform for browsing information about Edakkal Caves, selecting preferred dates, and completing ticket transactions securely through Razorpay integration. Complementing the user-facing application is the administrative mobile app, built with Flutter, tailored for District Tourism Promotion Council agents. This app empowers administrators to efficiently manage and verify bookings, incorporating a secure QR code scanning system for on-site validation.
+
+Throughout this section, we explore the design choices, system architecture, and development methodologies employed to bring the proposed system to fruition. From wireframes and mock-ups to the selection of robust technologies, every aspect is meticulously considered to create a system that not only meets the immediate needs of ticketing but also aligns with broader goals of enhancing visitor engagement and preserving the cultural heritage of Edakkal Caves.
+
+\section{System Specification}
+
+\subsection{Hardware Specification}
+The most common set of requirements defined by any operating system or soft- ware application is the physical computer resources, also known as hardware. The minimal hardware requirements are as follows:
+
+\begin{itemize}
+    \item \textbf{Processor:} Intel Core i3
+    \item \textbf{RAM:} 4 GB
+    \item \textbf{Hard Disk:} 1 GB
+    \item \textbf{Monitor:} 15.6 inch
+    \item \textbf{Processor Speed:} 2.4 GHz
+    \item \textbf{Keyboard:} 104 keys
+\end{itemize}
+
+\subsection{Software Requirements}
+Software requirements deal with defining resource requirements and prerequisites that need to be installed on a computer to provide the functioning of an application. The minimal software requirements are as follows:
+
+\begin{itemize}
+    \item \textbf{Operating System:} Windows/Linux/Mac
+    \item \textbf{Frontend:} React JS \& Flutter
+    \item \textbf{Package Manager:} NPM/Yarn \& Pub
+    \item \textbf{Programming Language:} JavaScript \& Dart
+    \item \textbf{Backend:} Firebase
+    \item \textbf{IDE:} Visual Studio Code
+    \item \textbf{Payment Gateway:} Razorpay
+\end{itemize}
+
+\section{Programming Languages Used}
+
+The development of the Ticket Booking System for Edakkal Caves embraces a strategic blend of programming languages, carefully selected to optimize functionality and user experience.
+
+\textbf{1. User Portal} (Web Application):
+
+\begin{itemize}
+    \item Framework: React
+    \item Programming Language: JavaScript
+\end{itemize}
+
+The user-facing web application, designed for tourists to seamlessly explore and book tickets for Edakkal Caves, is built on the React framework. JavaScript, a versatile and widely adopted programming language, forms the backbone of this component. Leveraging the capabilities of React, the user portal ensures an interactive and responsive interface, providing visitors with an intuitive and efficient ticketing experience.
+
+\textbf{2. Admin App} (Mobile Application):
+\begin{itemize}
+    \item Framework: Flutter
+    \item Programming Language: Dart
+\end{itemize}
+The administrative mobile app, catering to the needs of District Tourism Promotion Council agents, is crafted using the Flutter framework. Dart, as the programming language of choice for Flutter, enables the development of a cross-platform application with a single codebase. This ensures consistency in functionality and design across both Android and iOS platforms. The use of Dart contributes to the app's efficiency and performance, aligning with the project's commitment to a seamless administrative experience.
+
+By employing React and JavaScript for the user portal and Flutter with Dart for the admin app, the Ticket Booking System leverages the strengths of these technologies to create a unified and robust solution that meets the diverse needs of tourists and administrative personnel alike.
+
+
+\section{Modules of the System}
+
+\begin{itemize}
+    \item \textbf{User Portal:} The user portal is the primary interface for tourists to explore Edakkal Caves and book tickets for a specified date and time. This module comprises the following components:
+          \begin{itemize}
+              \item \textbf{Home Module:} The home page serves as the landing page for the user portal, providing visitors with an overview of Edakkal Caves and the ticketing process. This page also includes a link to the ticket booking page.
+              \item \textbf{Ticket Booking Module:} The ticket booking module enables tourists to select a preferred date and time slot for their visit. This module also includes the form and payment gateway for completing the ticket booking process.
+              \item \textbf{Ticket Module:} The ticket confirmation page is displayed upon successful completion of the ticket booking process, providing visitors with a summary of their booking details.
+          \end{itemize}
+
+    \item \textbf{Admin App:} The administrative mobile app empowers District Tourism Promotion Council agents to efficiently manage and verify bookings. This module comprises the following components:
+          \begin{itemize}
+              \item \textbf{Login Module:} The login module enables Council agents to securely access the admin app, requiring a valid username and password.
+              \item \textbf{Dashboard Module:} The dashboard module serves as the landing page for the admin app, providing Council agents with an overview of the ticketing process and the latest updates.
+              \item \textbf{Ticket Verification Module:} The ticket verification module enables Council agents to scan the QR code on a visitor's ticket to validate the booking.
+              \item \textbf{Ticket Management Module:} The ticket management module empowers Council agents to view and manage all bookings, including the ability to cancel tickets.
+          \end{itemize}
+\end{itemize}
+
+\section{Design and Architecture of the System}
+A system architecture is a conceptual model that defines the structure, behavior, and views of a system. It defines the structure of the software system and how it is organized. It also describes the relationships between components, levels of abstraction, and other aspects of the software system. The architecture of the proposed system is given in Figure ~\ref{architecture}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{assets/Architecture.png}
+    \caption{Architecture of the Proposed System}
+    \label{architecture}
+\end{figure}
+
+\subsection{Data Flow Diagrams (DFD)}
+The data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles, and arrows, plus short text labels, to show data inputs, outputs, storage points, and the routes between each destination. Data flowcharts can range from simple, even hand-drawn process overviews, to in-depth, multi-level DFDs that dig progressively deeper into how the data is handled.
+
+Levels or layers are used in DFDs to represent progressive degrees of detail about the system or process. These levels include:
+\begin{itemize}
+    \item \textbf{Level 0}: Also known as a "context diagram," this is the highest level and represents a very simple, top-level view of the system being represented.
+    \item \textbf{Level 1}: Still a relatively broad view of the system, but incorporates subprocesses and more detail.
+    \item \textbf{Level 2}: Provides even more detail and continues to break down subprocesses as needed.
+    \item \textbf{Level 3}: While this amount of detail is uncommon, complex systems can benefit from representation at this level.
+\end{itemize}
+
+In theory, more levels are possible, but they are rarely used and would likely represent more detail than a data flow diagram would normally convey. The diagrams of different levels of the DFD are illustrated in the following Figures
+
+\section{Design and Architecture of the System}
+A system architecture is a conceptual model that defines the structure, behavior, and views of a system. It defines the structure of the software system and how it is organized. It also describes the relationships between components, levels of abstraction, and other aspects of the software system. The architecture of the proposed system is given in Figure ~\ref{architecture}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{assets/Architecture.png}
+    \caption{Architecture of the Proposed System}
+    \label{architecture}
+\end{figure}
+
+\subsection{Data Flow Diagrams (DFD)}
+The data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles, and arrows, plus short text labels, to show data inputs, outputs, storage points, and the routes between each destination. Data flowcharts can range from simple, even hand-drawn process overviews, to in-depth, multi-level DFDs that dig progressively deeper into how the data is handled.
+
+Levels or layers are used in DFDs to represent progressive degrees of detail about the system or process. These levels include:
+\begin{itemize}
+    \item \textbf{Level 0}: Also known as a "context diagram," this is the highest level and represents a very simple, top-level view of the system being represented.
+    \item \textbf{Level 1}: Still a relatively broad view of the system, but incorporates subprocesses and more detail.
+    \item \textbf{Level 2}: Provides even more detail and continues to break down subprocesses as needed.
+    \item \textbf{Level 3}: While this amount of detail is uncommon, complex systems can benefit from representation at this level.
+\end{itemize}
+
+In theory, more levels are possible, but they are rarely used and would likely represent more detail than a data flow diagram would normally convey. The diagrams of different levels of the DFD are illustrated in the following Figures:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{assets/DFD-1.jpg}
+    \caption{Level 0 DFD}
+    \label{dfd-1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{assets/DFD-2-User.jpg}
+    \caption{Level 1 DFD - User Portal}
+    \label{dfd-2-user}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{assets/DFD-2-Admin.jpg}
+    \caption{Level 1 DFD - Admin App}
+    \label{dfd-2-admin}
+\end{figure}
+\clearpage
+
+\section{UML Diagrams}
+UML stands for Unified Modeling Language. UML is a standardized general-purpose modeling language in the field of object-oriented software engineering. The standard is managed and was created by the Object Management Group. The goal is for UML to become a common language for creating models of object-oriented computer software. In its current form, UML is comprised of two major components: a Meta-model and a notation. In the future, some form of method or process may also be added to or associated with UML.
+The Unified Modeling Language is a standard language for specifying, visualization, constructing, and documenting the artifacts of software systems, as well as for business modeling and other non-software systems. The UML represents a collection of best engineering practices that have proven successful in the modeling of large and complex systems. UML is a very important part of developing object-oriented software and the software development process. The UML uses mostly graphical notations to express the design of software projects.
+
+The primary goals in the design of the UML are as follows:
+\begin{itemize}
+    \item Provide users with a ready-to-use, expressive visual modeling language so that they can develop and exchange meaningful models.
+    \item Provide extensibility and specialization mechanisms to extend the core concepts.
+    \item Be independent of particular programming languages and development processes.
+    \item Provide a formal basis for understanding the modeling language.
+    \item Encourage the growth of the object-oriented tools market.
+    \item Support higher-level development concepts such as collaborations, frameworks, patterns, and components.
+    \item Integrate best practices.
+\end{itemize}
+
 \end{document}
