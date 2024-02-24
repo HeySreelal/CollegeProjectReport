@@ -5,16 +5,15 @@
 \usepackage{listings}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
-\usepackage{epstopdf}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{eufrak}
 \usepackage{url}
-\usepackage{courier}
-\usepackage[nottoc,notlot,notlof]{tocbibind}
 \usepackage{acronym}
 \usepackage{hyperref}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
 \newcommand{\textform}[1]{\fontsize{14}{20}\selectfont{#1}}
 \pagestyle{fancy}
 \fancyhf{}
@@ -25,7 +24,6 @@
 \renewcommand{\footrulewidth}{1pt}
 \begin{document}
 \bibliographystyle{plain}
-
 \thispagestyle{empty}
 
 \begin{center}
@@ -40,19 +38,19 @@
     \vspace{0.4cm}
     \fontsize{14pt}{18pt}\selectfont \textbf{Bachelor of Science}\\
     \fontsize{12pt}{18pt}\selectfont \text{in}\\
-    \fontsize{12pt}{18pt}\selectfont \textbf{\textit{Computer Science}}\\
+    \fontsize{12pt}{18pt}\selectfont \textbf{Computer Science}\\
     \fontsize{12pt}{18pt}\selectfont \text{by}\\
     \vspace{0.4cm}
     \fontsize{17.28pt}{18pt}\selectfont \textbf{SREELAL TS}\\[.2 cm]
     \fontsize{14pt}{18pt}\selectfont \textbf{(MM21CCSR26)}\\[.5 cm]
     \fontsize{12pt}{18pt}\selectfont \textit{under the guidance of}\\[.4 cm]
-    \fontsize{14pt}{18pt}\selectfont \textbf{Mr. SABU O J}\\
+    \fontsize{14pt}{18pt}\selectfont \textbf{Mr. Sabu O J (Asst. Professor)}\\
     \vspace{.7cm}
     \includegraphics[scale=0.25]{assets/mmc.png}\\[.2 cm]
     \fontsize{14pt}{18pt}\selectfont \textbf{PG and Research Department of Computer Science}\\[.5 cm]
     \fontsize{12pt}{18pt}\selectfont \text{Mary Matha Arts and Science College}\\[.4 cm]
     \fontsize{12pt}{14pt}\selectfont \text{Mananthavady}\\[.5 cm]
-    \fontsize{14pt}{18pt}\selectfont \text{MAY 2024}\\[.5 cm]
+    \fontsize{14pt}{18pt}\selectfont \text{MARCH 2024}\\[.5 cm]
 \end{center}
 
 % Declaration Page --------------------------------------------------------------
@@ -85,16 +83,15 @@
 \renewcommand\abstractname{\textform{\textbf{CERTIFICATE}}}
 \begin{abstract}
     \vspace{1.5 cm}
-    This is to certify that this project report entitled  \textbf{\textquotedblleft Ticket Booking System for Edakkal Caves\textquotedblright}, is a bonafide record of the work carried out by \textbf{Mr. Sreelal TS} under our supervision in the PG and Research Department of Computer Science, Mary Matha Arts \& Science College, as a part of his/her Bachelor of Science in Computer Science.  The work presented in this project or parts of it has not been presented for the award of any other degree(s). \\[1.5cm]
+    This is to certify that this project report entitled  \textbf{\textquotedblleft Ticket Booking System for Edakkal Caves\textquotedblright}, is a bonafide record of the work carried out by \textbf{Mr. Sreelal TS} under our supervision in the PG and Research Department of Computer Science, Mary Matha Arts \& Science College, as a part of his Bachelor of Science in Computer Science.  The work presented in this project or parts of it has not been presented for the award of any other degree(s). \\[1.5cm]
     \begin{minipage}{.7\textwidth}
         \begin{flushleft}
             GUIDE \\
         \end{flushleft}
     \end{minipage}
     \begin{minipage}{.9\textwidth}
-
         \begin{flushleft}
-            HEAD OF THE DEPT. \\[1 cm]
+            HEAD OF THE DEPARTMENT \\ [1 cm]
         \end{flushleft}
     \end{minipage}
     \vfill
@@ -134,9 +131,9 @@
     that became the foundation of this project. I am highly indebted to my institution, Mary Matha Arts
     and Science College, Mananthavady for providing me with the necessary facilities to work on this project.
     I would like to extend my sincere gratitude to
-    Dr. Maria Martin Joseph, the principal, and Ms. Jisha T E, Head of Department,
+    Dr. Maria Martin Joseph, the principal, and Jisha T E, Associate Professor \& Head of Department,
     PG and Research Department of Computer Science, for their constant support.
-    I would also like to thank my guide Mr. Sabu O J, for the valuable guidance
+    I would also like to thank my guide Mr. Sabu O J (Asst. Professor), for the valuable guidance
     throughout this project work. I also thank the Management and the staff of Mary
     Matha Arts and Science College, Mananthavady for providing me with an opportunity
     to do the project work. Last, but perhaps most important, I thank my parents,
@@ -436,6 +433,7 @@ A test plan serves as a comprehensive document outlining the strategy, scope, re
 
 Furthermore, in the development of the admin app, we employed a comprehensive testing approach to validate its functionality and robustness. This involved utilizing Flutter Unit Testing to scrutinize individual units of code, Widget Testing to assess the rendering and behavior of user interface components, and integration testing to evaluate the seamless interaction and integration of various modules within the app. By employing these testing methodologies, we ensured that the admin app meets the required standards of performance and functionality, contributing to a seamless user experience.
 
+\clearpage
 \section{Test Cases and Tools Used}
 
 \begin{enumerate}
@@ -532,6 +530,18 @@ This section contains screenshots of various pages from the Ticket Booking Syste
     \centering
     \includegraphics[width=1\textwidth]{screenshots/Slots.jpg}
     \caption{Screenshot of the section showing available slots}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/welcome-screens.png}
+    \caption{Screenshot of the Welcome Screens}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{screenshots/admin-app-screens.png}
+    \caption{Screenshot of the Admin App Screen}
 \end{figure}
 
 \end{document}
